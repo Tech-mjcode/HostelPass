@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center">
+
+       <TextView
+           android:id="@+id/txtDateStatus"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:layout_margin="20dp"
+           android:fontFamily="@font/allerta"
+           android:text="Date :"></TextView>
+
+       <TextView
+           android:id="@+id/txtPurposeCheck"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:fontFamily="@font/allerta"
+           android:text="Purpose : ">
+
+       </TextView>
+
+       <TextView
+           android:id="@+id/txtStatusCheck"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="30dp"
+           android:fontFamily="@font/allerta"
+           android:text="Status : ">
+
+       </TextView>
+
+       <Button
+           android:id="@+id/btnGetQr"
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:text="Get QR">
+
+       </Button>
+   </LinearLayout>
+</LinearLayout>

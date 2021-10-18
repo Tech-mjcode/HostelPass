@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="172dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/image"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Full Name"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image"
+        app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Email"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutName"
+        app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutPhone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Phone No"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEmail"
+        app:prefixText="+91"
+        app:prefixTextColor="#FF1F1F"
+        app:startIconDrawable="@drawable/ic_baseline_phone_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutCourse"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPhone"
+        app:startIconDrawable="@drawable/ic_baseline_school_24">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewCourse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:text="Course" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCourse"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <android.widget.Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_signup"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="#E281F3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Select hostel : "
+            android:textColor="#171717" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupHostel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBoys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boys" />
+
+            <RadioButton
+                android:id="@+id/radioGirls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Girls" />
+        </RadioGroup>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

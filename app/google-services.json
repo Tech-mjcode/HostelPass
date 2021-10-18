@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "43668976704",
+    "project_id": "gimthostelgatepass",
+    "storage_bucket": "gimthostelgatepass.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43668976704:android:06af9f06fc107956511ba5",
+        "android_client_info": {
+          "package_name": "com.example.hostelpassout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43668976704-nrmjveilnrp67m7g80r62v50fjkp2i6s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqnYQ0FeaCQI-rwqWKaKZMPAI3gG55avs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43668976704-nrmjveilnrp67m7g80r62v50fjkp2i6s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
